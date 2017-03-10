@@ -14,14 +14,14 @@ public class MainActivity extends Activity {
     public void plusOne (View view) {
 
         counter++;
-        mTextView.setText(counter);
+        mTextView.setText(Integer.toString(counter));
 
     }
 
     public void reset (View view) {
 
         counter = 0;
-        mTextView.setText(counter);
+        mTextView.setText(Integer.toString(counter));
 
     }
 
