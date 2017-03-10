@@ -3,11 +3,27 @@ package com.garfieldchou.peoplecounter;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.wearable.view.WatchViewStub;
+import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
     private TextView mTextView;
+    int counter = 0;
+
+    public void plusOne (View view) {
+
+        counter++;
+        mTextView.setText(counter);
+
+    }
+
+    public void reset (View view) {
+
+        counter = 0;
+        mTextView.setText(counter);
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
